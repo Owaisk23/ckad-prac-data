@@ -1,0 +1,18 @@
+LAST SEEN   TYPE      REASON                    OBJECT                                     MESSAGE
+64m         Warning   FailedGetScale            horizontalpodautoscaler/nginx-deployment   deployments/scale.apps "nginx-deployment" not found
+45m         Normal    Starting                  node/minikube                              Starting kubelet.
+45m         Normal    NodeHasNoDiskPressure     node/minikube                              Node minikube status is now: NodeHasNoDiskPressure
+45m         Normal    NodeHasSufficientPID      node/minikube                              Node minikube status is now: NodeHasSufficientPID
+45m         Normal    NodeAllocatableEnforced   node/minikube                              Updated Node Allocatable limit across pods
+45m         Normal    NodeHasSufficientMemory   node/minikube                              Node minikube status is now: NodeHasSufficientMemory
+45m         Normal    Starting                  node/minikube                              Starting kube-proxy.
+45m         Normal    RegisteredNode            node/minikube                              Node minikube event: Registered Node minikube in Controller
+4m53s       Warning   FailedGetScale            horizontalpodautoscaler/nginx-deployment   deployments/scale.apps "nginx-deployment" not found
+40m         Normal    Scheduled                 pod/nginx                                  Successfully assigned default/nginx to minikube
+40m         Normal    Pulling                   pod/nginx                                  Pulling image "nginx"
+40m         Normal    Pulled                    pod/nginx                                  Successfully pulled image "nginx"
+36m         Normal    Created                   pod/nginx                                  Created container nginx
+36m         Normal    Started                   pod/nginx                                  Started container nginx
+36m         Normal    Killing                   pod/nginx                                  Container nginx definition changed, will be restarted
+36m         Normal    Pulling                   pod/nginx                                  Pulling image "nginx:1.16.1"
+36m         Normal    Pulled                    pod/nginx                                  Successfully pulled image "nginx:1.16.1"

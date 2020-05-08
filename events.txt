@@ -1,0 +1,46 @@
+LAST SEEN   TYPE      REASON      OBJECT        MESSAGE
+102m        Normal    Scheduled   pod/nginx     Successfully assigned default/nginx to minikube
+102m        Normal    Pulling     pod/nginx     Pulling image "nginx"
+102m        Normal    Created     pod/nginx     Created container nginx
+102m        Normal    Pulled      pod/nginx     Successfully pulled image "nginx"
+102m        Normal    Started     pod/nginx     Started container nginx
+101m        Warning   Unhealthy   pod/nginx     Liveness probe failed: HTTP probe failed with statuscode: 404
+101m        Normal    Killing     pod/nginx     Stopping container nginx
+94m         Normal    Scheduled   pod/nginx     Successfully assigned default/nginx to minikube
+94m         Normal    Pulling     pod/nginx     Pulling image "nginx"
+94m         Normal    Created     pod/nginx     Created container nginx
+94m         Normal    Pulled      pod/nginx     Successfully pulled image "nginx"
+94m         Normal    Started     pod/nginx     Started container nginx
+93m         Warning   Unhealthy   pod/nginx     Liveness probe failed: HTTP probe failed with statuscode: 404
+93m         Normal    Killing     pod/nginx     Stopping container nginx
+93m         Normal    Scheduled   pod/nginx     Successfully assigned default/nginx to minikube
+93m         Normal    Pulling     pod/nginx     Pulling image "nginx"
+93m         Normal    Started     pod/nginx     Started container nginx
+93m         Normal    Created     pod/nginx     Created container nginx
+93m         Normal    Pulled      pod/nginx     Successfully pulled image "nginx"
+92m         Warning   Unhealthy   pod/nginx     Liveness probe failed: HTTP probe failed with statuscode: 404
+92m         Normal    Killing     pod/nginx     Stopping container nginx
+15m         Normal    Scheduled   pod/nginx     Successfully assigned default/nginx to minikube
+15m         Normal    Pulling     pod/nginx     Pulling image "nginx"
+14m         Normal    Started     pod/nginx     Started container nginx
+14m         Normal    Created     pod/nginx     Created container nginx
+14m         Normal    Pulled      pod/nginx     Successfully pulled image "nginx"
+13m         Warning   Unhealthy   pod/nginx     Liveness probe failed: HTTP probe failed with statuscode: 404
+13m         Normal    Killing     pod/nginx     Stopping container nginx
+12m         Normal    Scheduled   pod/busybox   Successfully assigned default/busybox to minikube
+12m         Normal    Pulling     pod/busybox   Pulling image "busybox"
+12m         Normal    Pulled      pod/busybox   Successfully pulled image "busybox"
+12m         Normal    Created     pod/busybox   Created container busybox
+12m         Normal    Started     pod/busybox   Started container busybox
+9m51s       Normal    Killing     pod/busybox   Stopping container busybox
+8m18s       Normal    Scheduled   pod/busybox   Successfully assigned default/busybox to minikube
+8m16s       Normal    Pulling     pod/busybox   Pulling image "busybox"
+8m8s        Normal    Pulled      pod/busybox   Successfully pulled image "busybox"
+8m8s        Normal    Created     pod/busybox   Created container busybox
+8m8s        Normal    Started     pod/busybox   Started container busybox
+6m32s       Normal    Killing     pod/busybox   Stopping container busybox
+4m47s       Normal    Scheduled   pod/busybox   Successfully assigned default/busybox to minikube
+4m46s       Normal    Pulling     pod/busybox   Pulling image "busybox"
+4m41s       Normal    Pulled      pod/busybox   Successfully pulled image "busybox"
+4m41s       Normal    Created     pod/busybox   Created container busybox
+4m41s       Normal    Started     pod/busybox   Started container busybox

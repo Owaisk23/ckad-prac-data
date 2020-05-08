@@ -1,0 +1,18 @@
+LAST SEEN   TYPE     REASON      OBJECT        MESSAGE
+43m         Normal   Scheduled   pod/nginx     Successfully assigned default/nginx to minikube
+43m         Normal   Pulling     pod/nginx     Pulling image "nginx"
+43m         Normal   Started     pod/nginx     Started container nginx
+43m         Normal   Created     pod/nginx     Created container nginx
+43m         Normal   Pulled      pod/nginx     Successfully pulled image "nginx"
+41m         Normal   Killing     pod/nginx     Stopping container nginx
+12m         Normal   Pulling     pod/busybox   Pulling image "busybox"
+12m         Normal   Scheduled   pod/busybox   Successfully assigned default/busybox to minikube
+12m         Normal   Created     pod/busybox   Created container busybox
+12m         Normal   Pulled      pod/busybox   Successfully pulled image "busybox"
+12m         Normal   Started     pod/busybox   Started container busybox
+11m         Normal   Killing     pod/busybox   Stopping container busybox
+2m24s       Normal   Scheduled   pod/busybox   Successfully assigned default/busybox to minikube
+2m23s       Normal   Pulling     pod/busybox   Pulling image "busybox"
+2m18s       Normal   Started     pod/busybox   Started container busybox
+2m18s       Normal   Created     pod/busybox   Created container busybox
+2m18s       Normal   Pulled      pod/busybox   Successfully pulled image "busybox"

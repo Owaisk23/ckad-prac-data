@@ -1,0 +1,3 @@
+kube-system   kube-apiserver-minikube            36m          235Mi           
+kube-system   etcd-minikube                      23m          73Mi            
+kube-system   kube-controller-manager-minikube   20m          40Mi            

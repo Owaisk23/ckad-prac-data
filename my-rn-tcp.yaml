@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+ name: myapp-rn-tcp
+spec:
+ containers:
+ - name: myapp
+   image: nginx
+   ports:
+   - containerPort: 80
+   readinessProbe:
+     tcpSocket:
+       port: 8080

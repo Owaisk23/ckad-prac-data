@@ -1,0 +1,27 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  creationTimestamp: null
+  name: mycj
+spec:
+  jobTemplate:
+    metadata:
+      creationTimestamp: null
+      name: mycj
+    spec:
+      activeDeadlineSeconds: 17
+      template:
+        metadata:
+          creationTimestamp: null
+        spec:
+          containers:
+          - command:
+            - /bin/sh
+            - -c
+            - date; echo 'Hello from kubernetes'
+            image: busybox
+            name: mycj
+            resources: {}
+          restartPolicy: Never
+  schedule: '* * * * *'
+status: {}

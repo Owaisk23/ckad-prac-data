@@ -1,0 +1,101 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2020-04-13T05:56:50Z"
+  labels:
+    test: liveness
+  name: liveness-exec
+  namespace: default
+  resourceVersion: "648615"
+  selfLink: /api/v1/namespaces/default/pods/liveness-exec
+  uid: 6c6ffb8a-1345-4dbc-b1eb-fcb44096170f
+spec:
+  containers:
+  - args:
+    - /bin/sh
+    - -c
+    - touch /tmp/healthy;
+    image: k8s.gcr.io/busybox
+    imagePullPolicy: Always
+    livenessProbe:
+      exec:
+        command:
+        - cat
+        - /tmp/healthy
+      failureThreshold: 3
+      initialDelaySeconds: 5
+      periodSeconds: 5
+      successThreshold: 1
+      timeoutSeconds: 1
+    name: liveness
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-zz5wq
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: minikube
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: default-token-zz5wq
+    secret:
+      defaultMode: 420
+      secretName: default-token-zz5wq
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-04-13T05:56:50Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-04-13T05:56:54Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-04-13T05:56:54Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-04-13T05:56:50Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://982e23edc86d610b9cfbe8f47e6360d42be12556e6c10e80cc11fc8c098bec3c
+    image: k8s.gcr.io/busybox:latest
+    imageID: docker-pullable://k8s.gcr.io/busybox@sha256:d8d3bc2c183ed2f9f10e7258f84971202325ee6011ba137112e01e30f206de67
+    lastState:
+      terminated:
+        containerID: docker://19e9f38f3cb39e148c2cdce0a28a5684856cdcb3e7a3d89cf28b19a57f69035f
+        exitCode: 137
+        finishedAt: "2020-04-13T05:59:22Z"
+        reason: Error
+        startedAt: "2020-04-13T05:58:10Z"
+    name: liveness
+    ready: true
+    restartCount: 2
+    state:
+      running:
+        startedAt: "2020-04-13T05:59:25Z"
+  hostIP: 10.0.2.15
+  phase: Running
+  podIP: 172.17.0.7
+  qosClass: BestEffort
+  startTime: "2020-04-13T05:56:50Z"

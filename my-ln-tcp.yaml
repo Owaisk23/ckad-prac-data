@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+ name: myapp-ln-tcp
+spec:
+ containers:
+ - name: myapp
+   image: nginx
+   ports:
+   - containerPort: 80
+   livenessProbe:
+     tcpSocket:
+       port: 8080
